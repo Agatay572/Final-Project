@@ -1,0 +1,199 @@
+body {
+    position: relative;
+    min-height: 100vh;
+    background: url(/images/bg2.png) no-repeat center center / cover;
+    display: flex;
+    flex-direction: column;
+    padding-top: 100px;
+}
+
+body::before {
+    content: " ";
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: inherit;
+    filter: blur(5px);
+    z-index: -1;
+}
+
+.geologica {
+    font-family: "Geologica", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+        "slnt" 0,
+        "CRSV" 0,
+        "SHRP" 0;
+}
+
+.container {
+    width: 800px;
+    min-height: 500px;
+    background-color: #f6f2ff;
+    border-radius: 2px;
+    border: solid 10px rgb(255, 255, 255);
+    margin: 0 auto;
+}
+
+header {
+    height: 150px;
+    display: flex;
+}
+
+.titleblock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 100%;
+    width: 80%;
+    background: url(/images/codecode.webp) no-repeat center center / cover;
+    margin-right: 10px;
+    color: #fff;
+}
+
+.titleblock::after {
+    content: " ";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.4;
+}
+
+.user-pic {
+    height: 100%;
+    width: 20%;
+    background: url(/images/pfp.jpg) no-repeat center center / cover;
+
+
+}
+
+h1 {
+    color: white;
+    position: relative;
+    z-index: 1;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+nav ul {
+    display: flex;
+    background-color: rgb(176, 220, 255);
+    margin: 10px 0;
+}
+
+nav li a {
+    display: inline-block;
+    padding: 20px;
+    text-decoration: none;
+    color: darkblue;
+    font-weight: bold;
+    border-right: 2px solid rgb(176, 220, 255);
+    transition: background-color 0.3s ease;
+    font-family: arial;
+} 
+
+nav li a:hover {
+    background-color: #5b74ff;
+    color: white;
+}
+
+.content-wrapper {
+    display: flex;
+}
+
+.content {
+    color: rgb(0, 26, 82);
+    width: 70%;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-family: arial;
+}
+
+.content p {
+    line-height: 20px;
+}
+
+.site-bar {
+    width: 30%;
+    padding: 20px;
+}
+
+.skillz li a {
+    display: inline-block;
+    text-decoration: none;
+    padding-top: 10px;
+    cursor: pointer;
+    color: black;
+    transition: transform 0.5s ease;
+    font-family: arial;
+}
+
+.skillz li a:hover {
+    transform: translateX(20px);
+}
+
+.skillz {
+    margin-bottom: 30px;
+}
+
+footer {
+    background-color: #000d55;
+    color: #fff;
+    padding: 0 20px;
+    text-align: center;
+    margin-top: auto;
+}
+
+.footer-wrapper {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-contact {
+    font-size: 1em;
+    font-family: arial;
+}
+
+.footer-contact p {
+    margin: 5px;
+}
+
+.footer-social {
+    display: flex;
+    margin: 15px;
+    gap: 5px;
+}
+
+.footer-social a {
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+.footer-social a img {
+    width: 30px;
+    height: 30px;
+    transition: all 0,3s ease;
+}
+
+.footer-social a:hover img {
+    transform: scale(1.2);
+    opacity: 0.8;
+}
