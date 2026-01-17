@@ -1,7 +1,7 @@
 body {
     position: relative;
     min-height: 100vh;
-    background: url(/images/bg2.png) no-repeat center center / cover;
+    background: url(../images/bg2.png) no-repeat center center / cover;
     display: flex;
     flex-direction: column;
     padding-top: 100px;
@@ -51,7 +51,7 @@ header {
     position: relative;
     height: 100%;
     width: 80%;
-    background: url(/images/codecode.webp) no-repeat center center / cover;
+    background: url(../images/codecode.webp) no-repeat center center / cover;
     margin-right: 10px;
     color: #fff;
 }
@@ -70,7 +70,7 @@ header {
 .user-pic {
     height: 100%;
     width: 20%;
-    background: url(/images/pfp.jpg) no-repeat center center / cover;
+    background: url(../images/pfp.jpg) no-repeat center center / cover;
 
 
 }
